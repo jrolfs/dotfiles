@@ -1,0 +1,6 @@
+[submodule "home/.alfred"]
+	path = home/.alfred
+	url = git@github.com:jrolfs/alfred-settings.git
+[submodule "home/.oh-my-zsh"]
+	path = home/.oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
