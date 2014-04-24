@@ -87,8 +87,31 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# HOMESHICK
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
-# PATH
-export PATH="/usr/local/bin:$PATH"
+# PATH (make sure brew and npm have precedence)
+export PATH="/usr/local/bin:/usr/local/share/npm/bin:$PATH"
+
+# RBENV
+eval "$(rbenv init -)"
+
+# FASD
+eval "$(fasd --init auto)"
+
+# KEY BINDINGS
+bindkey "^R" history-incremental-search-backward
+
+
+#
+# WELCOME
+#
+
+clear
+echo -e "Kernel:" `uname -smr`;
+echo -e "Shell:" `zsh --version`;echo ""
+echo -ne "Hello $USER, today is "; date
+echo ""
+fortune | cowsay | lolcat
+echo ""
