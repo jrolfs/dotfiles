@@ -4,3 +4,9 @@
 [submodule "home/.sublime"]
 	path = home/.sublime
 	url = git@github.com:jrolfs/sublime-settings.git
+[submodule "home/.zprezto"]
+	path = home/.zprezto
+	url = https://github.com/sorin-ionescu/prezto.git
+[submodule "home/.vim/bundle/Vundle.vim"]
+	path = home/.vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
