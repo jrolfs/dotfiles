@@ -12,3 +12,13 @@ fi
 
 # Customize to your needs...
 
+#
+# Homeshick
+
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# Completions
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+
+
+
