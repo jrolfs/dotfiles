@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " The following are examples of different formats supported.
@@ -49,11 +51,17 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-
+set t_Co=256
 syntax on
 
-" Tab Size (2)
+" Tab Size
 set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" Status Line
+set laststatus=2
+
+" Airline
+let g:airline_powerline_fonts = 1
