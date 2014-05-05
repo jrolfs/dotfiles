@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'node' \
   'python' \
   'utility' \
+  'wakonlan' \
   'completion' \
   'fasd' \
   'syntax-highlighting' \
