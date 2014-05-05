@@ -15,6 +15,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'altercation/vim-colors-solarized'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -51,8 +53,11 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
+" Colors
 set t_Co=256
 syntax on
+set background=dark
+colorscheme solarized
 
 " Tab Size
 set smartindent
