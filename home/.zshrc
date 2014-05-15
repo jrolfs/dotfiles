@@ -20,5 +20,7 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 # Completions
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
-
-
+# Prompt
+autoload -Uz promptinit
+promptinit
+prompt steeef
