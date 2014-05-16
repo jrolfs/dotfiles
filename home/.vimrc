@@ -68,5 +68,18 @@ set expandtab
 " Status Line
 set laststatus=2
 
+" Line Numbers
+set number
+
 " Airline
 let g:airline_powerline_fonts = 1
+
+"
+" Bindings
+
+" Tabs
+map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
+
