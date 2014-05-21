@@ -20,6 +20,9 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 # Completions
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
+# Key Bindings
+bindkey '^R' history-incremental-search-backward
+
 # Prompt
 autoload -Uz promptinit
 promptinit
