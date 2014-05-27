@@ -5,6 +5,12 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Completions
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+
+# Custom Themes
+fpath=($HOME/.zthemes $fpath)
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -17,13 +23,10 @@ fi
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
-# Completions
-fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
-
 # Key Bindings
 bindkey '^R' history-incremental-search-backward
 
 # Prompt
 autoload -Uz promptinit
 promptinit
-prompt steeef
+prompt jamie
