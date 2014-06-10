@@ -20,7 +20,7 @@ fi
 # Customize to your needs...
 
 # Hub
-alias git="$(hub alias -s)"
+eval "$(hub alias -s)"
 
 # Homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
