@@ -7,6 +7,7 @@
 
 # Completions
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+fpath=(/usr/local/share/zsh/site-functions $fpath)
 
 # Custom Themes
 fpath=($HOME/.zthemes $fpath)
@@ -18,9 +19,10 @@ fi
 
 # Customize to your needs...
 
-#
-# Homeshick
+# Hub
+alias git="$(hub alias -s)"
 
+# Homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 # Key Bindings
