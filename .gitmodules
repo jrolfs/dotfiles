@@ -1,9 +1,6 @@
 [submodule "home/.alfred"]
 	path = home/.alfred
 	url = git@github.com:jrolfs/alfred-settings.git
-[submodule "home/.sublime"]
-	path = home/.sublime
-	url = git@github.com:jrolfs/sublime-settings.git
 [submodule "home/.zprezto"]
 	path = home/.zprezto
 	url = https://github.com/sorin-ionescu/prezto.git
@@ -19,3 +16,6 @@
 [submodule "home/.rbenv/plugins/rbenv-each"]
 	path = home/.rbenv/plugins/rbenv-each
 	url = https://github.com/chriseppstein/rbenv-each.git
+[submodule "home/Library/Application Support/Sublime Text 3"]
+	path = home/Library/Application Support/Sublime Text 3
+	url = git@github.com:jrolfs/sublime-settings.git
