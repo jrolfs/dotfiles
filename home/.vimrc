@@ -14,6 +14,8 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'elzr/vim-json'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
