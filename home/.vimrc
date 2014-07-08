@@ -11,6 +11,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
+Bundle 'Shougo/neocomplete.git'
 
 Plugin 'altercation/vim-colors-solarized'
 
@@ -82,3 +83,5 @@ map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
 
+" Completion
+let g:neocomplete#enable_at_startup = 1
