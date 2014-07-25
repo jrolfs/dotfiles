@@ -14,7 +14,7 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/Jamie/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	pager = less -FXRS -x2
 [alias]
 	st = status
