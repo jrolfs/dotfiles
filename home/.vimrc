@@ -11,8 +11,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
+Bundle 'Shougo/neocomplete.git'
 
 Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'elzr/vim-json'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " The following are examples of different formats supported.
@@ -80,3 +83,5 @@ map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
 
+" Completion
+let g:neocomplete#enable_at_startup = 1
