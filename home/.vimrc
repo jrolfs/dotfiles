@@ -94,3 +94,6 @@ map <C-t><right> :tabn<cr>
 
 " Completion
 let g:neocomplete#enable_at_startup = 1
+
+" Clipboard
+set clipboard=unnamed
