@@ -9,9 +9,10 @@ call vundle#begin()
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplete.git'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Plugin 'altercation/vim-colors-solarized'
 
@@ -72,7 +73,12 @@ set laststatus=2
 set number
 
 " Airline
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
+
+" Powerline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 "
 " Bindings
