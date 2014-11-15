@@ -9,10 +9,12 @@ call vundle#begin()
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
-"Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplete.git'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'kien/ctrlp.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 Plugin 'altercation/vim-colors-solarized'
 
@@ -86,14 +88,39 @@ python del powerline_setup
 "
 " Bindings
 
+" Buffers
+
+" close buffer
+nmap <leader>d :bp<bar>sp<bar>bn<bar>bd<CR>
+
+" close all buffers
+nmap <leader>D :bufdo bd<CR>
+
+" Switch between buffers
+noremap <S-tab> :bp<CR>
+noremap <tab> :bn<CR>
+
 " Tabs
+
 map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
-map <C-t><left> :tabp<cr>
-map <C-t><right> :tabn<cr>
+
+" open a new tab with ctrl-t
+nnoremap <C-t> :tabnew<CR>
+
+" cycle tabs left and right with ctrl
+nnoremap <C-h> :tabp<CR>
+nnoremap <C-l> :tabn<CR>
 
 " Completion
 let g:neocomplete#enable_at_startup = 1
 
 " Clipboard
 set clipboard=unnamed
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Nerdtree
+map <C-N> :NERDTreeToggle<CR>
