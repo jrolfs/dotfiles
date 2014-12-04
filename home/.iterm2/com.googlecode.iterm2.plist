@@ -608,7 +608,7 @@
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/Pictures</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -828,7 +828,7 @@
 			<key>Background Image Is Tiled</key>
 			<true/>
 			<key>Background Image Location</key>
-			<string>/Users/Jamie/Pictures/Terminal/dlanham-Tinnitus.jpg</string>
+			<string>/Users/Jamie/Pictures/Wallpapers/dlanham-Tinnitus.jpg</string>
 			<key>Blend</key>
 			<real>0.30000001192092896</real>
 			<key>Blink Allowed</key>
@@ -1466,7 +1466,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-11-12T17:48:48Z</date>
+	<date>2014-11-14T22:33:31Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.0.0.20141022</string>
 	<key>SavePasteHistory</key>
